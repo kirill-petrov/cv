@@ -11,8 +11,7 @@
   padding-top: 64px;
   padding-bottom: 64px;
 
-
-  background-color: rgb(227, 255, 243);
+  /* background-color: rgb(227, 255, 243); */
 }
 
 .grid-container {
@@ -20,24 +19,22 @@
   grid-template-columns: 280px 280px 280px 280px;
   grid-template-rows: 280px 280px 280px 1fr 280px;
   gap: 24px;
-
   grid-template-areas:
     "mode userpic . education"
     "title . contact contact"
     ". . . ."
     "projects . experience experience"
     "footer footer footer footer";
-
   margin-left: 64px;
   margin-right: 184px;
 }
 
-.grid-container>div {
-  background-color: rgba(143, 88, 144, 0.754);
-}
+/* .grid-container>div {} */
 
 .grid-item-mode {
   grid-area: mode;
+
+  place-self: start start;
 }
 
 .grid-item-userpic {
@@ -54,6 +51,10 @@
 
 .grid-item-quote-contact {
   grid-area: contact;
+
+  color: rgba(0, 0, 0, 0.6);
+
+  background-color: #f7f7f7
 }
 
 .grid-item-projects {
