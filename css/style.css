@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+
+  background-color: rgb(227, 255, 243);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 280px 280px 280px 280px;
+  /* проблема с размером row 284 */
+  grid-auto-rows: minmax(280px, auto);
+  gap: 24px;
+
+  grid-template-areas:
+    "mode userpic . education"
+    "title . contact contact"
+    ". . . ."
+    "projects . experience experience"
+    "footer footer footer footer";
+
+  margin-left: 64px;
+  margin-right: 184px;
+}
+
+.grid-container>div {
+  background-color: rgba(143, 88, 144, 0.754);
+}
+
+.grid-item-mode {
+  grid-area: mode;
+}
+
+.grid-item-userpic {
+  grid-area: userpic;
+}
+
+.grid-item-education {
+  grid-area: education;
+}
+
+.grid-item-name-title {
+  grid-area: title;
+}
+
+.grid-item-quote-contact {
+  grid-area: contact;
+}
+
+.grid-item-projects {
+  grid-area: projects;
+}
+
+.grid-item-experience {
+  grid-area: experience;
+}
+
+.grid-item-footer {
+  grid-area: footer;
+}
+
+img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.name {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.3);
+}
