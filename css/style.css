@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
+:root {
+  --color-bg: #f7f7f7;
+  --color-text: #666666;
+  --color-text-secondary: #b3b3b3;
+}
+
 * {
+  margin: 0;
+  padding: 0;
+
   font-family: 'Inter', sans-serif;
+  font-style: normal;
+  color: var(--color-text);
 }
 
 .container {
   width: 1440px;
-  height: 100vh;
   margin: 0 auto;
   padding-top: 64px;
   padding-bottom: 64px;
-
-  /* background-color: rgb(227, 255, 243); */
 }
 
 .grid-container {
@@ -29,8 +37,6 @@
   margin-right: 184px;
 }
 
-/* .grid-container>div {} */
-
 .grid-item-mode {
   grid-area: mode;
 
@@ -41,51 +47,24 @@
   grid-area: userpic;
 }
 
+.grid-item-userpic img {
+  width: 100%;
+}
+
 .grid-item-education {
   grid-area: education;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.grid-item-education span {
+  color: var(--color-text-secondary);
 }
 
 .grid-item-name-title {
   grid-area: title;
-}
-
-.grid-item-stack {
-  grid-area: stack;
-  grid-column: 3 / span 2;
-  display: flex;
-  align-items: end;
-
-  color: rgba(0, 0, 0, 0.6);
-
-  background-color: #f7f7f7
-}
-
-
-.grid-item-contact {
-  grid-area: contact;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-
-  color: rgba(0, 0, 0, 0.3);
-
-}
-
-.grid-item-projects {
-  grid-area: projects;
-}
-
-.grid-item-experience {
-  grid-area: experience;
-}
-
-.grid-item-footer {
-  grid-area: footer;
-}
-
-img {
-  width: 100%;
-  /* height: 100%; */
 }
 
 .name {
@@ -95,12 +74,67 @@ img {
   font-size: 36px;
   line-height: 44px;
   text-transform: capitalize;
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .subtitle {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--color-text-secondary);
+}
+
+.grid-item-stack {
+  grid-area: stack;
+  grid-column: 3 / span 2;
+  display: grid;
+  align-items: end;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+
+  background-color: var(--color-bg);
+}
+
+.grid-item-contact {
+  grid-area: contact;
+}
+
+.grid-item-contact p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+
+  color: var(--color-text-secondary);
+
+}
+
+.grid-item-projects {
+  grid-area: projects;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height, or 167% */
+
+
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.grid-item-experience {
+  grid-area: experience;
+}
+
+.grid-item-footer {
+  grid-area: footer;
+  display: grid;
+  align-items: end;
+}
+
+.grid-item-footer p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
 }
