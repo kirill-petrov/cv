@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Frontend</title>
+    <title>CV</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -49,73 +49,79 @@
             mail@kirill-petrov.ru<br />
           </p>
         </section>
-        <section class="grid-item-projects">Проекты</section>
+        <section class="grid-item-projects">
+          <ul class="projects__list">
+            <li>Проекты</li>
+            <li><a href="">Neafisha</a></li>
+            <li><a href="">CRM</a></li>
+          </ul>
+        </section>
         <section class="grid-item-experience">
-          <p>
-            Experience Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Saepe obcaecati laudantium dolorum reiciendis, nemo provident illo
-            voluptates? Illum veritatis dicta quas explicabo, vel magni nisi,
-            pariatur quasi, voluptates a provident totam ea inventore
-            necessitatibus commodi. Cumque tempora iusto fugit facilis! Dolore,
-            asperiores dolorem! Rem expedita quisquam explicabo placeat totam
-            labore soluta iusto fugit facilis! Dolore, asperiores dolorem! Rem
-            expedita quisquam explicabo placeat totam labore soluta iusto fugit
-            facilis! Dolore, asperiores dolorem! Rem expedita quisquam explicabo
-            placeat totam labore soluta iusto fugit facilis! Dolore, asperiores
-            dolorem! Rem expedita quisquam explicabo placeat totam labore soluta
-            iusto fugit facilis! Dolore, asperiores dolorem! Rem expedita
-            quisquam explicabo placeat totam labore soluta officia neque,
-            reiciendis sed nulla itaque consequatur quae omnis earum minus
-            sapiente sunt officiis necessitatibus praesentium commodi. Velit,
-            qui. Autem numquam, quo expedita assumenda id maiores laboriosam
-            reiciendis nisi voluptatibus ipsum aspernatur, sunt facilis sapiente
-            dolores excepturi pariatur velit nemo! In quod expedita ipsum
-            accusantium, necessitatibus quisquam maxime laborum ut aut beatae
-            doloremque nesciunt quos minima reiciendis error molestiae, placeat
-            modi illo explicabo repudiandae numquam facilis voluptas adipisci?
-            Totam excepturi dolorum debitis dolore doloribus fuga aspernatur
-            facere ut architecto labore, tempore suscipit minus explicabo
-            dignissimos atque laborum maxime obcaecati ipsum repellat ab
-            repellendus dolorem velit blanditiis harum! Esse, sed! Facere magni
-            debitis dolorum ad nesciunt quia, ab doloremque, et sunt alias
-            sapiente! Perspiciatis veritatis numquam in necessitatibus et libero
-            blanditiis architecto nemo optio iusto mollitia, incidunt
-            consectetur accusantium illo qui ex sequi facilis obcaecati magni
-            tenetur aspernatur ea pariatur. Consequatur aut et ducimus saepe
-            veritatis quibusdam quia doloremque asperiores.
-          </p>
-          <p>
-            Experience Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Saepe obcaecati laudantium dolorum reiciendis, nemo provident illo
-            voluptates? Illum veritatis dicta quas explicabo, vel magni nisi,
-            pariatur quasi, voluptates a provident totam ea inventore
-            necessitatibus commodi. Cumque tempora iusto fugit facilis! Dolore,
-            asperiores dolorem! Rem expedita quisquam explicabo placeat totam
-            labore soluta iusto fugit facilis! Dolore, asperiores dolorem! Rem
-            expedita quisquam explicabo placeat totam labore soluta iusto fugit
-            facilis! Dolore, asperiores dolorem! Rem expedita quisquam explicabo
-            placeat totam labore soluta iusto fugit facilis! Dolore, asperiores
-            dolorem! Rem expedita quisquam explicabo placeat totam labore soluta
-            iusto fugit facilis! Dolore, asperiores dolorem! Rem expedita
-            quisquam explicabo placeat totam labore soluta officia neque,
-            reiciendis sed nulla itaque consequatur quae omnis earum minus
-            sapiente sunt officiis necessitatibus praesentium commodi. Velit,
-            qui. Autem numquam, quo expedita assumenda id maiores laboriosam
-            reiciendis nisi voluptatibus ipsum aspernatur, sunt facilis sapiente
-            dolores excepturi pariatur velit nemo! In quod expedita ipsum
-            accusantium, necessitatibus quisquam maxime laborum ut aut beatae
-            doloremque nesciunt quos minima reiciendis error molestiae, placeat
-            modi illo explicabo repudiandae numquam facilis voluptas adipisci?
-            Totam excepturi dolorum debitis dolore doloribus fuga aspernatur
-            facere ut architecto labore, tempore suscipit minus explicabo
-            dignissimos atque laborum maxime obcaecati ipsum repellat ab
-            repellendus dolorem velit blanditiis harum! Esse, sed! Facere magni
-            debitis dolorum ad nesciunt quia, ab doloremque, et sunt alias
-            sapiente! Perspiciatis veritatis numquam in necessitatibus et libero
-            blanditiis architecto nemo optio iusto mollitia, incidunt
-            consectetur accusantium illo qui ex sequi facilis obcaecati magni
-            tenetur aspernatur ea pariatur. Consequatur aut et ducimus saepe
-            veritatis quibusdam quia doloremque asperiores.
+          <article class="experience">
+            <p class="experience__position">
+              JavaScript-разработчик <a href="https://tages.ru/">в Tages</a>
+            </p>
+            <p class="experience__duration">Ноябрь 2021 — Март 2022</p>
+            <p class="experience__desc">
+              Я занимался разработкой микросервисов на Node.js. Реализовал
+              бекенд на проекте по интеграции сервисов мониторинга и оповещения
+              об инцидентах – Opsgenie и PagerDuty. С помощью API требовалось
+              автоматизировать коммуникацию между командами инженеров «Леруа
+              Мерлен» и «Тагес», использующих разный софт.
+            </p>
+            <p class="experience__desc">
+              Также выполнял инфраструктурные GitOps-задачи (techsupport):
+              настройка зависимостей и конфигов для test, dev и prod-env,
+              настройка вебхуков для деплоя и выдача прав на git-репозитории,
+              создание каналов в ArgoCD для облачных пайплайнов CI/CD, настройка
+              Vault Secrets в подах Kubernetes, перезагрузка подов оркестратора
+              на prod-окружениях, поиск ошибок в трейсах и логах Tekton, Jenkins
+              и Kubernetes.
+            </p>
+          </article>
+          <article class="experience">
+            <!-- <p class="experience__position">
+              Fullstack-разработчик<span>, заказная разработка</span>
+            </p> -->
+            <p class="experience__position">Фриланс, заказная разработка</p>
+            <p class="experience__duration">Октябрь 2020 — Сентябрь 2021</p>
+            <p class="experience__desc">
+              <span>Fullstack-разработчик</span><br />
+              Сервис для поиска неформальных событий в СПб. На проекте
+              реализовывал архитектуру бэкенда: - продумал логику БД (модели,
+              миграции, зависимости между таблицами); - настроил сервер
+              (express-session, cors, валидация, хэширование паролей); -
+              прописал маршрутизацию (роуты, логика контроллеров, запросы к БД);
+              На фронте: - настроил фильтрацию событий по категориям (бары,
+              выставки, лекции). - написал компоненты для админ-панели
+              (регистрация, авторизация, формы для добавления событий и
+              локаций). Стек проекта: PWA, API Яндекс-карт, .JS, SCSS, Gulp,
+              React, Redux, Thunk, Express, PostgreSQL, Sequelize
+            </p>
+            <p class="experience__desc">
+              <span>Fullstack-разработчик</span><br />
+              CRM-приложение для контроля исполнения заказ-нарядов в
+              производственных компаниях
+              (https://github.com/kirill-petrov/crm-app). Реализовал задачи: -
+              Компоненты пользовательских интерфейсов для
+              создания/редактирования отделов, ролей, номенклатуры, формирования
+              заказ-нарядов и др. - Маршрутизация, запросы к БД. - Авторизация,
+              хэширование паролей, настройка сессий, валидация на фронте и
+              бэкенде. Стек проекта: JS, CSS, React, Redux, Saga, Express,
+              PostgreSQL, i18next
+            </p>
+            <p class="experience__desc">
+              <span>Frontend-разработчик</span><br />
+              Несложные задачи на фронтенде: <br />
+              - доработка существующей вёрстки и функционала;<br />
+              - вёрстка макетов, адаптив (в т.ч. Bootstrap, Bulma, MUI);<br />
+              - разработка и стилизация React-компонентов;<br />
+              - настройка роутинга для переходов между страницами;<br />
+              - простые задачи на бэкенде (маршрутизаця, БД).
+            </p>
+          </article>
+          <p class="experience__desc">
+            Дополнительная история доступна по запросу
           </p>
         </section>
         <footer class="grid-item-footer"><p>2022</p></footer>

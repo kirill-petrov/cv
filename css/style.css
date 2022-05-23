@@ -89,7 +89,7 @@
   display: grid;
   align-items: end;
 
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   line-height: 40px;
 
@@ -116,14 +116,55 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 40px;
-  /* identical to box height, or 167% */
+}
 
+.projects__list {
+  list-style: none;
+}
 
-  color: rgba(0, 0, 0, 0.6);
+.projects__list a {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--color-text-secondary);
 }
 
 .grid-item-experience {
   grid-area: experience;
+}
+
+.experience {
+  margin-bottom: 112px;
+}
+
+.experience__position {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.experience__position a,
+.experience__position span {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+}
+
+.experience__duration {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--color-text-secondary);
+}
+
+.experience__desc {
+  margin-top: 20px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  text-align: justify;
+  color: var(--color-text-secondary);
 }
 
 .grid-item-footer {
