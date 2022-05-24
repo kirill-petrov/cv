@@ -106,10 +106,8 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  /* text-align: right; */
 
   color: var(--color-text-secondary);
-
 }
 
 .grid-item-projects {
@@ -164,7 +162,6 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  /* or 133% */
 
   text-align: justify;
   color: var(--color-text-secondary);
@@ -261,4 +258,90 @@ a {
     grid-column: 1 / span 2;
     grid-row: 7;
   }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 375px;
+  }
+
+  .grid-container {
+    grid-template-columns: 280px;
+    grid-template-rows: 280px 280px 280px 280px 1fr 280px;
+
+    margin-left: 32px;
+    margin-right: 63px;
+  }
+
+  .grid-item-mode {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: start start;
+  }
+
+  .grid-item-contact {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: start end;
+
+    text-align: right;
+  }
+
+  .grid-item-name-title {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: end start;
+  }
+
+  .grid-item-userpic {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .grid-item-stack {
+    grid-column: 1;
+    grid-row: 3;
+    place-self: start start;
+
+    background-color: unset;
+  }
+
+  .grid-item-projects {
+    grid-column: 1;
+    grid-row: 3;
+    place-self: end start;
+  }
+
+  .grid-item-education {
+    grid-column: 1;
+    grid-row: 4;
+
+    background-color: var(--color-bg);
+  }
+
+  .grid-item-education div {
+    visibility: hidden;
+  }
+
+  .grid-item-experience {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .grid-item-footer {
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  */
+  /* 
+
+
+
+  .grid-item-education p {
+    color: var(--color-text-secondary);
+  }
+
+
+
 }
