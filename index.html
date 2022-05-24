@@ -11,7 +11,7 @@
 
   <body>
     <div class="container">
-      <div class="grid-container">
+      <main class="grid-container">
         <div class="grid-item-mode">
           <object
             class="light-mode"
@@ -29,12 +29,14 @@
           <img src="./img/userpic.jpeg" alt="userpic" />
         </div>
         <section class="grid-item-education">
-          <span>Образование</span>
-          <p>Менторы, книги<br />и интернет.</p>
+          <div>
+            <span>Образование</span>
+            <p>Менторы, книги<br />и интернет.</p>
+          </div>
         </section>
         <section class="grid-item-name-title">
           <h1 class="name">Кирилл Петров</h1>
-          <p class="subtitle">Frontend-разработчик</p>
+          <p class="subtitle">Фронтенд-разработчик</p>
         </section>
         <section class="grid-item-stack">
           <p>
@@ -45,23 +47,23 @@
         <section class="grid-item-contact">
           <p>
             Санкт-Петербург<br />
-            +7 911 178-11-98<br />
             mail@kirill-petrov.ru<br />
+            telega & gitHub<br />
           </p>
         </section>
         <section class="grid-item-projects">
           <ul class="projects__list">
             <li>Проекты</li>
-            <li><a href="">Neafisha</a></li>
-            <li><a href="">CRM</a></li>
+            <li><a href="#neafisha">Neafisha</a></li>
+            <li><a href="#crm">CRM</a></li>
           </ul>
         </section>
         <section class="grid-item-experience">
           <article class="experience">
-            <p class="experience__position">
-              JavaScript-разработчик <a href="https://tages.ru/">в Tages</a>
-            </p>
-            <p class="experience__duration">Ноябрь 2021 — Март 2022</p>
+            <h2 class="experience__position">
+              Junior Software Engineer <a href="https://tages.ru/">в Tages</a>
+            </h2>
+            <p class="experience__duration">Ноябрь 2021 — Апрель 2022</p>
             <p class="experience__desc">
               Я занимался разработкой микросервисов на Node.js. Реализовал
               бекенд на проекте по интеграции сервисов мониторинга и оповещения
@@ -83,9 +85,9 @@
             <!-- <p class="experience__position">
               Fullstack-разработчик<span>, заказная разработка</span>
             </p> -->
-            <p class="experience__position">Фриланс, заказная разработка</p>
+            <h2 class="experience__position">Фриланс, заказная разработка</h2>
             <p class="experience__duration">Октябрь 2020 — Сентябрь 2021</p>
-            <p class="experience__desc">
+            <p class="experience__desc" id="neafisha">
               <span>Fullstack-разработчик</span><br />
               Сервис для поиска неформальных событий в СПб. На проекте
               реализовывал архитектуру бэкенда: - продумал логику БД (модели,
@@ -98,7 +100,7 @@
               локаций). Стек проекта: PWA, API Яндекс-карт, .JS, SCSS, Gulp,
               React, Redux, Thunk, Express, PostgreSQL, Sequelize
             </p>
-            <p class="experience__desc">
+            <p class="experience__desc" id="crm">
               <span>Fullstack-разработчик</span><br />
               CRM-приложение для контроля исполнения заказ-нарядов в
               производственных компаниях
@@ -124,8 +126,10 @@
             Дополнительная история доступна по запросу
           </p>
         </section>
-        <footer class="grid-item-footer"><p>2022</p></footer>
-      </div>
+        <section class="grid-item-footer">
+          <footer><p>2022</p></footer>
+        </section>
+      </main>
     </div>
   </body>
 </html>

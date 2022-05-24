@@ -15,6 +15,10 @@
   color: var(--color-text);
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -27,24 +31,18 @@
   grid-template-columns: 280px 280px 280px 280px;
   grid-template-rows: 280px 280px 280px 1fr 280px;
   gap: 24px;
-  grid-template-areas:
-    "mode userpic . education"
-    "title . stack contact"
-    ". . . ."
-    "projects . experience experience"
-    "footer footer footer footer";
   margin-left: 64px;
   margin-right: 184px;
 }
 
 .grid-item-mode {
-  grid-area: mode;
+  grid-column: 1;
 
   place-self: start start;
 }
 
 .grid-item-userpic {
-  grid-area: userpic;
+  grid-column: 2;
 }
 
 .grid-item-userpic img {
@@ -52,7 +50,7 @@
 }
 
 .grid-item-education {
-  grid-area: education;
+  grid-column: 4;
 
   font-weight: 400;
   font-size: 24px;
@@ -64,7 +62,8 @@
 }
 
 .grid-item-name-title {
-  grid-area: title;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .name {
@@ -73,19 +72,18 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
-  text-transform: capitalize;
 }
 
 .subtitle {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 29px;
   color: var(--color-text-secondary);
 }
 
 .grid-item-stack {
-  grid-area: stack;
   grid-column: 3 / span 2;
+  grid-row: 2;
   display: grid;
   align-items: end;
 
@@ -97,21 +95,26 @@
 }
 
 .grid-item-contact {
-  grid-area: contact;
+  grid-column: 4;
+  grid-row: 2;
+  place-self: start end;
+
+  text-align: right;
 }
 
 .grid-item-contact p {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  text-align: right;
+  /* text-align: right; */
 
   color: var(--color-text-secondary);
 
 }
 
 .grid-item-projects {
-  grid-area: projects;
+  grid-column: 1;
+  grid-row: 4;
 
   font-weight: 500;
   font-size: 24px;
@@ -123,13 +126,13 @@
 }
 
 .projects__list a {
-  text-decoration: none;
   font-weight: 400;
   color: var(--color-text-secondary);
 }
 
 .grid-item-experience {
-  grid-area: experience;
+  grid-column: 3 / span 2;
+  grid-row: 4;
 }
 
 .experience {
@@ -168,7 +171,8 @@
 }
 
 .grid-item-footer {
-  grid-area: footer;
+  grid-column: 1 / span 4;
+  grid-row: 5;
   display: grid;
   align-items: end;
 }
@@ -178,4 +182,83 @@
   font-size: 14px;
   line-height: 24px;
   color: var(--color-text-secondary);
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .grid-container {
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 280px 280px 280px 280px 280px 1fr 280px;
+
+    margin-left: 48px;
+    margin-right: 136px;
+  }
+
+  .grid-item-userpic {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .grid-item-name-title {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .grid-item-contact {
+    grid-column: 2;
+    grid-row: 1;
+    place-self: end start;
+
+    text-align: left;
+  }
+
+  .grid-item-stack {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+
+    background-color: unset;
+  }
+
+  .grid-item-mode {
+    grid-column: 2;
+    grid-row: 2;
+    place-self: start end;
+  }
+
+  .grid-item-education {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    display: grid;
+    place-items: end start;
+
+    background-color: var(--color-bg);
+  }
+
+  .grid-item-education span {
+    color: var(--color-text);
+  }
+
+  .grid-item-education p {
+    color: var(--color-text-secondary);
+  }
+
+  .grid-item-projects {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .grid-item-experience {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+  }
+
+  .grid-item-footer {
+    grid-column: 1 / span 2;
+    grid-row: 7;
+  }
 }
