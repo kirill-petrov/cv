@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -28,19 +32,19 @@
         <div class="grid-item-userpic">
           <img src="./img/userpic.jpeg" alt="userpic" />
         </div>
+        <section class="grid-item-name-title">
+          <h1 class="name">Кирилл Петров</h1>
+          <p class="subtitle">Фронтенд-разработчик</p>
+        </section>
         <section class="grid-item-education">
           <div>
             <span>Образование</span>
             <p>Менторы, книги<br />и интернет.</p>
           </div>
         </section>
-        <section class="grid-item-name-title">
-          <h1 class="name">Кирилл Петров</h1>
-          <p class="subtitle">Фронтенд-разработчик</p>
-        </section>
         <section class="grid-item-stack">
           <p>
-            Мой стек: <br />
+            <span>Мой стек:</span> <br />
             JavaScript, React, Redux, PostgreSQL, MongoDB
           </p>
         </section>
@@ -63,22 +67,27 @@
             <h2 class="experience__position">
               Junior Software Engineer <a href="https://tages.ru/">в Tages</a>
             </h2>
-            <p class="experience__duration">Ноябрь 2021 — Апрель 2022</p>
-            <p class="experience__desc">
-              Я занимался разработкой микросервисов на Node.js. Реализовал
-              бекенд на проекте по интеграции сервисов мониторинга и оповещения
-              об инцидентах – Opsgenie и PagerDuty. С помощью API требовалось
-              автоматизировать коммуникацию между командами инженеров «Леруа
-              Мерлен» и «Тагес», использующих разный софт.
+            <p class="experience__duration">
+              Ноябрь 2021&nbsp;&mdash; Апрель 2022
             </p>
             <p class="experience__desc">
-              Также выполнял инфраструктурные GitOps-задачи (techsupport):
-              настройка зависимостей и конфигов для test, dev и prod-env,
-              настройка вебхуков для деплоя и выдача прав на git-репозитории,
-              создание каналов в ArgoCD для облачных пайплайнов CI/CD, настройка
-              Vault Secrets в подах Kubernetes, перезагрузка подов оркестратора
-              на prod-окружениях, поиск ошибок в трейсах и логах Tekton, Jenkins
-              и Kubernetes.
+              Я&nbsp;занимался разработкой микросервисов на&nbsp;NodeJS.
+              Реализовал бекенд на&nbsp;проекте по&nbsp;интеграции сервисов
+              мониторинга и&nbsp;оповещения об&nbsp;инцидентах&nbsp;&mdash;
+              Opsgenie и&nbsp;PagerDuty. С&nbsp;помощью вебхуков и&nbsp;API этих
+              сервисов требовалось синхронизировать информацию
+              об&nbsp;инцидентах некоторых категорий, чтобы распределить
+              нагрузку между инженерами из&nbsp;двух компаний.
+            </p>
+            <p class="experience__desc">
+              Также выполнял инфраструктурные GitOps-задачи (supporting):
+              настройка зависимостей и&nbsp;конфигов для test, dev
+              и&nbsp;prod-окружений, настройка вебхуков для деплоя и&nbsp;выдача
+              прав на&nbsp;git-репозитории, создание каналов в&nbsp;ArgoCD для
+              облачных пайплайнов CI/CD, настройка Vault Secrets в&nbsp;подах
+              Kubernetes, перезагрузка подов оркестратора
+              на&nbsp;prod-окружениях, поиск ошибок в&nbsp;трейсах и&nbsp;логах
+              Tekton, Jenkins и&nbsp;Kubernetes.
             </p>
           </article>
           <article class="experience">
