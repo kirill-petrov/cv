@@ -14,8 +14,8 @@
   </head>
 
   <body>
-    <div class="container">
-      <main class="grid-container">
+    <main class="container">
+      <div class="grid-container">
         <div class="grid-item-mode">
           <object
             class="light-mode"
@@ -58,13 +58,13 @@
         <section class="grid-item-projects">
           <ul class="projects__list">
             <li>Проекты</li>
-            <li><a href="#neafisha">Neafisha</a></li>
-            <li><a href="#crm">CRM</a></li>
+            <li><a href="#neafisha">neafisha</a></li>
+            <li><a href="#crm">crm</a></li>
           </ul>
         </section>
         <section class="grid-item-experience">
-          <article class="experience">
-            <h2 class="experience__position">
+          <div class="experience">
+            <h2 class="experience__header">
               Junior Software Engineer <a href="https://tages.ru/">в Tages</a>
             </h2>
             <p class="experience__duration">
@@ -89,56 +89,86 @@
               на&nbsp;prod-окружениях, поиск ошибок в&nbsp;трейсах и&nbsp;логах
               Tekton, Jenkins и&nbsp;Kubernetes.
             </p>
-          </article>
-          <article class="experience">
-            <!-- <p class="experience__position">
-              Fullstack-разработчик<span>, заказная разработка</span>
-            </p> -->
-            <h2 class="experience__position">Фриланс, заказная разработка</h2>
+          </div>
+          <div class="experience">
+            <h2 class="experience__header">Фриланс, заказная разработка</h2>
             <p class="experience__duration">Октябрь 2020 — Сентябрь 2021</p>
-            <p class="experience__desc" id="neafisha">
-              <span>Fullstack-разработчик</span><br />
-              Сервис для поиска неформальных событий в СПб. На проекте
-              реализовывал архитектуру бэкенда: - продумал логику БД (модели,
-              миграции, зависимости между таблицами); - настроил сервер
-              (express-session, cors, валидация, хэширование паролей); -
-              прописал маршрутизацию (роуты, логика контроллеров, запросы к БД);
-              На фронте: - настроил фильтрацию событий по категориям (бары,
-              выставки, лекции). - написал компоненты для админ-панели
-              (регистрация, авторизация, формы для добавления событий и
-              локаций). Стек проекта: PWA, API Яндекс-карт, .JS, SCSS, Gulp,
-              React, Redux, Thunk, Express, PostgreSQL, Sequelize
-            </p>
-            <p class="experience__desc" id="crm">
-              <span>Fullstack-разработчик</span><br />
-              CRM-приложение для контроля исполнения заказ-нарядов в
-              производственных компаниях
-              (https://github.com/kirill-petrov/crm-app). Реализовал задачи: -
-              Компоненты пользовательских интерфейсов для
-              создания/редактирования отделов, ролей, номенклатуры, формирования
-              заказ-нарядов и др. - Маршрутизация, запросы к БД. - Авторизация,
-              хэширование паролей, настройка сессий, валидация на фронте и
-              бэкенде. Стек проекта: JS, CSS, React, Redux, Saga, Express,
-              PostgreSQL, i18next
-            </p>
-            <p class="experience__desc">
-              <span>Frontend-разработчик</span><br />
-              Несложные задачи на фронтенде: <br />
-              - доработка существующей вёрстки и функционала;<br />
-              - вёрстка макетов, адаптив (в т.ч. Bootstrap, Bulma, MUI);<br />
-              - разработка и стилизация React-компонентов;<br />
-              - настройка роутинга для переходов между страницами;<br />
-              - простые задачи на бэкенде (маршрутизаця, БД).
-            </p>
-          </article>
+
+            <div>
+              <h3 id="neafisha">
+                Сервис для поиска неформальных событий в СПб (PWA)
+              </h3>
+              <p class="experience__desc">
+                На&nbsp;проекте реализовывал архитектуру бэкенда. Продумал
+                логику БД&nbsp;&mdash; модели, миграции, зависимости между
+                таблицами. Настроил сервер&nbsp;&mdash; express-session,
+                cors-options, валидацию данных, обработку ошибок, хэширование
+                паролей. Прописал маршрутизацию, логику контроллеров
+                и&nbsp;запросы к&nbsp;БД.
+              </p>
+              <p class="experience__desc">
+                На&nbsp;фронте настроил фильтры событий по&nbsp;категориям
+                мастер-классы, выставки, лекции и&nbsp;др. Написал компоненты
+                для админ-панели&nbsp;&mdash; регистрация, авторизация, формы
+                для добавления событий и&nbsp;локаций.
+              </p>
+              <p class="experience__desc">
+                Стек проекта: JS, SCSS, Gulp, React, Redux, Thunk, Express,
+                PostgreSQL, Sequelize, PWA, API Яндекс.Карт
+              </p>
+            </div>
+
+            <div>
+              <h3 id="crm">
+                <a href="https://github.com/kirill-petrov/crm-app">
+                  CRM-приложение для контроля исполнения заказ-нарядов в
+                  производственных компаниях (SPA) </a
+                ><br />
+              </h3>
+              <p class="experience__desc">
+                Написал компоненты пользовательских интерфейсов для
+                создания/редактирования: отделов, ролей, номенклатуры,
+                формирования заказ-нарядов и&nbsp;др. Также я&nbsp;решал задачи
+                по&nbsp;маршрутизации, чтение и&nbsp;запись в&nbsp;БД, настройка
+                сессий, авторизация, валидация на&nbsp;фронте и&nbsp;бэкенде.
+              </p>
+              <p class="experience__desc">
+                Стек проекта: JS, CSS, React, Redux, Saga, Express, PostgreSQL,
+                i18next
+              </p>
+            </div>
+
+            <div>
+              <h3>Аутстафинг</h3>
+              <p class="experience__desc">Типовые задачи:</p>
+              <ul class="experience__desc">
+                <li>
+                  &ndash;&nbsp;Доработка существующей вёрстки и&nbsp;функционала
+                </li>
+                <li>
+                  &ndash;&nbsp;Вёрстка макетов согласно UI-киту (в&nbsp;т.ч.
+                  Bootstrap, Bulma, MUI)
+                </li>
+                <li>
+                  &ndash;&nbsp;Разработка и&nbsp;стилизация React-компонентов
+                </li>
+                <li>
+                  &ndash;&nbsp;Простые BFF-задачи&nbsp;&mdash; роутинг, работа
+                  с&nbsp;БД
+                </li>
+              </ul>
+            </div>
+          </div>
           <p class="experience__desc">
             Дополнительная история доступна по запросу
           </p>
         </section>
-        <section class="grid-item-footer">
-          <footer><p>2022</p></footer>
-        </section>
-      </main>
-    </div>
+      </div>
+    </main>
+    <footer class="container">
+      <div class="footer">
+        <p style="background: rgb(185, 213, 185)">2022</p>
+      </div>
+    </footer>
   </body>
 </html>
