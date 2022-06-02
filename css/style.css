@@ -1,14 +1,40 @@
-:root {
-  --color-bg: #f7f7f7;
+body {
+  --color-bg: #fff;
+  --color-item-bg: #f7f7f7;
   --color-text: #666666;
   --color-text-secondary: #b3b3b3;
+}
+
+body.dark-theme {
+  --color-bg: #1E1E1E;
+  --color-item-bg: #252525;
+  --color-text: #a5a5a5;
+  --color-text-secondary: #616161;
+  /* --color-btn: #E2E2E2; */
+}
+
+@media (prefers-color-scheme: dark) {
+
+  /* defaults to dark theme */
+  body {
+    --color-bg: #1E1E1E;
+    --color-item-bg: #252525;
+    --color-text: #a5a5a5;
+    --color-text-secondary: #616161;
+  }
+
+  body.light-theme {
+    --color-bg: #fff;
+    --color-item-bg: #f7f7f7;
+    --color-text: #666666;
+    --color-text-secondary: #b3b3b3;
+  }
 }
 
 * {
   margin: 0;
   padding: 0;
 
-  text-decoration: none;
   color: var(--color-text);
 }
 
@@ -17,6 +43,12 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+
+  background: var(--color-bg);
+}
+
+a {
+  text-decoration: none;
 }
 
 h3 {
@@ -25,8 +57,6 @@ h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-
-  /* color: var(--color-text); */
 }
 
 ul.experience__desc {
@@ -58,10 +88,11 @@ ul.experience__desc li {
   padding-top: 64px;
 }
 
-.grid-item-mode {
+.btn-toggle {
   grid-column: 1;
 
   place-self: start start;
+  z-index: 10;
 }
 
 .grid-item-userpic {
@@ -114,7 +145,7 @@ ul.experience__desc li {
   font-size: 24px;
   line-height: 40px;
 
-  background-color: var(--color-bg);
+  background-color: var(--color-item-bg);
 }
 
 .grid-item-contact {
@@ -236,7 +267,7 @@ ul.experience__desc li {
     background-color: unset;
   }
 
-  .grid-item-mode {
+  .btn-toggle {
     grid-column: 2;
     grid-row: 2;
     place-self: start end;
@@ -248,7 +279,7 @@ ul.experience__desc li {
     display: grid;
     place-items: end start;
 
-    background-color: var(--color-bg);
+    background-color: var(--color-item-bg);
   }
 
   .grid-item-education span {
@@ -287,7 +318,7 @@ ul.experience__desc li {
     margin-right: 63px;
   }
 
-  .grid-item-mode {
+  .btn-toggle {
     grid-column: 1;
     grid-row: 1;
     place-self: start start;
@@ -367,7 +398,7 @@ ul.experience__desc li {
     grid-column: 1;
     grid-row: 4;
 
-    background-color: var(--color-bg);
+    background-color: var(--color-item-bg);
   }
 
   .grid-item-education div {
