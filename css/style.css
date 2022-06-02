@@ -100,6 +100,15 @@ ul.experience__desc li {
   fill: var(--color-svg);
 }
 
+.btn-toggle svg:hover {
+  cursor: pointer;
+}
+
+.btn-toggle svg:active {
+  width: 26px;
+  height: 26px;
+}
+
 .grid-item-userpic {
   grid-column: 2;
 }
