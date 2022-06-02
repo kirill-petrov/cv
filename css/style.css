@@ -136,7 +136,7 @@ ul.experience__desc li {
 .subtitle {
   font-weight: 500;
   font-size: 22px;
-  line-height: 29px;
+  line-height: 30px;
   color: var(--color-text-secondary);
 }
 
@@ -151,6 +151,10 @@ ul.experience__desc li {
   line-height: 40px;
 
   background-color: var(--color-item-bg);
+}
+
+.grid-item-stack p:first-child {
+  font-weight: 500;
 }
 
 .grid-item-contact {
@@ -370,15 +374,14 @@ ul.experience__desc li {
   }
 
   .grid-item-stack p {
+    padding-bottom: 8px;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
   }
 
-  .grid-item-stack span {
-    padding-bottom: 8px;
+  .grid-item-stack p:first-child {
     font-weight: 500;
-    color: red
   }
 
   .grid-item-projects {
