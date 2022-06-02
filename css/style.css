@@ -3,6 +3,7 @@ body {
   --color-item-bg: #f7f7f7;
   --color-text: #666666;
   --color-text-secondary: #b3b3b3;
+  --color-svg: #212121;
 }
 
 body.dark-theme {
@@ -10,7 +11,7 @@ body.dark-theme {
   --color-item-bg: #252525;
   --color-text: #a5a5a5;
   --color-text-secondary: #616161;
-  /* --color-btn: #E2E2E2; */
+  --color-svg: #e2e2e2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -93,6 +94,10 @@ ul.experience__desc li {
 
   place-self: start start;
   z-index: 10;
+}
+
+.btn-toggle path {
+  fill: var(--color-svg);
 }
 
 .grid-item-userpic {
