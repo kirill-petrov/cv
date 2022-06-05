@@ -68,8 +68,6 @@ ul.experience__desc {
 }
 
 ul.experience__desc li {
-  /* padding-top: 4px; */
-
   text-align: left;
   color: var(--color-text-secondary);
 }
@@ -172,6 +170,7 @@ ul.experience__desc li {
   place-self: start end;
 
   text-align: right;
+  /* text-decoration: none; */
 }
 
 .grid-item-contact p {
@@ -179,6 +178,10 @@ ul.experience__desc li {
   font-size: 14px;
   line-height: 24px;
 
+  color: var(--color-text-secondary);
+}
+
+.grid-item-contact a {
   color: var(--color-text-secondary);
 }
 
@@ -222,8 +225,6 @@ ul.experience__desc li {
 }
 
 .experience__duration {
-  /* margin-bottom: 20px; */
-
   font-weight: 400;
   font-size: 24px;
   line-height: 40px;
@@ -247,7 +248,6 @@ ul.experience__desc li {
 }
 
 /* responsive */
-
 @media screen and (max-width: 768px) {
   .container {
     width: 768px;
@@ -449,9 +449,6 @@ ul.experience__desc li {
     text-align: left;
 
   }
-
-
-
 
   .footer {
     margin-left: 32px;
