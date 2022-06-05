@@ -170,14 +170,12 @@ ul.experience__desc li {
   place-self: start end;
 
   text-align: right;
-  /* text-decoration: none; */
 }
 
 .grid-item-contact p {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-
   color: var(--color-text-secondary);
 }
 
@@ -237,7 +235,6 @@ ul.experience__desc li {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-
   text-align: justify;
   color: var(--color-text-secondary);
 }
@@ -409,7 +406,6 @@ ul.experience__desc li {
 
   .projects__list a {
     font-weight: 400;
-    /* color: var(--color-text-secondary); */
   }
 
   .grid-item-education {
