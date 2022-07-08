@@ -102,11 +102,6 @@ ul.experience__desc li {
   cursor: pointer;
 }
 
-.btn-toggle svg:active {
-  width: 26px;
-  height: 26px;
-}
-
 .grid-item-userpic {
   grid-column: 2;
 }
